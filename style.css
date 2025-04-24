@@ -1,56 +1,80 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f8f3fb;
+  background: #f0e5f4;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-  max-width: 650px;
-  margin: 40px auto;
-  padding: 0 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 90%;
+  max-width: 600px;
 }
 
 h1 {
   text-align: center;
-  color: #7b2cbf;
+  color: #6a1b9a;
+  font-size: 36px;
   margin-bottom: 30px;
-  font-size: 32px;
 }
 
 .card {
   background: #ffffff;
-  border-left: 8px solid #c77dff;
+  border-left: 8px solid #9c27b0;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(123, 44, 191, 0.1);
-  padding: 20px 25px;
-  margin-bottom: 25px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  color: #6a00f4;
+  color: #9c27b0;
   margin-bottom: 15px;
+  font-size: 22px;
 }
 
 ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 
 li {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
+  font-size: 18px;
+  color: #333;
 }
 
 input[type="checkbox"] {
-  transform: scale(1.2);
-  margin-right: 10px;
-  accent-color: #9d4edd;
+  transform: scale(1.5);
+  margin-right: 15px;
+  accent-color: #9c27b0;
 }
 
 label {
-  font-size: 16px;
-  color: #4a4a4a;
   cursor: pointer;
+  transition: color 0.2s;
+}
+
+label:hover {
+  color: #6a1b9a;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    padding: 20px;
+  }
 }
