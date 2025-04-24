@@ -1,33 +1,36 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #e9ecef;
+    background-color: #f0f4f8;
     margin: 0;
     padding: 20px;
 }
 
 h1 {
     text-align: center;
-    color: #343a40;
+    color: #333;
     margin-bottom: 20px;
+    font-size: 2.5em;
 }
 
 .task-list {
     background: #ffffff;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px 0;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .task-list:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-    color: #495057;
+    color: #007bff;
     border-bottom: 2px solid #007bff;
     padding-bottom: 10px;
+    font-size: 1.8em;
 }
 
 ul {
@@ -52,12 +55,19 @@ input[type="checkbox"]:checked {
 }
 
 label {
-    font-size: 1.1em;
-    color: #495057;
+    font-size: 1.2em;
+    color: #555;
     transition: color 0.2s;
 }
 
 input[type="checkbox"]:checked + label {
     text-decoration: line-through;
-    color: #6c757d;
+    color: #aaa;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
 }
